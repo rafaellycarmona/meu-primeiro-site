@@ -71,6 +71,7 @@
 <ul>
     <li></li>
 </ul>
+<button>🌠<span>0</span></button>
 
 <hr style="border: 0; border-top: 2px solid #ffffff; margin: 20px auto; max-width: 90%; opacity: 0.5;">
 
@@ -187,4 +188,14 @@
 </main>
 
 </body>
+<script>
+    const botao = document.querySelector("button");
+botao.addEventListener("click", botaoClicado);
+
+function botaoClicado() {
+let texto = botao.querySelector("span");
+texto.textContent++;
+}
+
+</script>
 </html>
